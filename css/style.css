@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, rgb(109, 158, 242) 0%, rgb(29, 29, 30) 100%);
+    height: 100vh; /*ocupa 100% da altura da página*/
+    width: 100vw; /*ocupa 100% da largura*/
+    display: grid;
+    place-items: center;
+}
+
+body * {
+    font-family: 'rubik';
+    letter-spacing: -0.02em; /*espaço entre letras*/
+}
+
+#calculator {
+    width: 356px;
+    height: 626px;
+    background: rgb(30, 28, 28);
+    box-shadow: 
+    inset 0px 4px 4px rgb(29, 27, 27), 
+    inset 0px 8px 8px rgb(70, 78, 78);
+    border-radius: 48px;
+}
+
+#display {
+    margin-top: 54px;
+    padding-inline: 32px; /*coloca espaços iguais nas larguras*/
+}
+
+#result {
+    text-align: right;
+    /* display: flex; */
+    justify-content: space-between ;
+    margin-top: 8px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: rgb(35, 34, 33);
+    color: white;
+    width: 290px;
+    height: 70px;
+    font-size: 30px;
+}
+
+#result span {
+    font-size: 36px;
+    line-height: 140%;
+    color: white;
+}
+
+#keyboard {
+    margin-top: 26px;
+    /* padding-bottom: 32px; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    height: 64px;
+    width: 64px;
+    color: white;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 
+    0px 7px 7px rgba(0, 0, 0, 0.04), 
+    0px 4px 6px rgba(0, 0, 0, 0.1), 
+    0px 2px 4px rgba(0, 0, 0, 0.26), 
+    0px 0px 2px rgba(0, 0, 0, 0.29), 
+    inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgb(34, 33, 33);
+}
+
+.secondary {
+    color: blueviolet;
+}
+
+.quartiary {
+    background-color: blueviolet;
+}
+
+#quartiary {
+    font-size: 40px;
+}

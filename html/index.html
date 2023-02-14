@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/script.js" defer ></script>
+    <title>calculadora</title>
+</head>
+<body>
+    <div id="calculator">
+        <div id="display">
+                <div id="result">
+            </div>
+            <div id="keyboard">
+                <button onclick="back()" class="secondary">CE</button>
+                <button onclick="clean()">C</button>
+                <button onclick="inserir('%')">%</button>
+                <button onclick="inserir('/')" class="quartiary"><img src="../assets/divisor.svg" alt="divisão"></button>
+                </div>
+            <div id="keyboard">
+                <button onclick="inserir('7')">7</button>
+                <button onclick="inserir('8')">8</button>
+                <button onclick="inserir('9')">9</button>
+                <button onclick="inserir('*')" class="quartiary">x</button>
+                </div>
+            <div id="keyboard">
+                <button onclick="inserir('4')">4</button>
+                <button onclick="inserir('5')">5</button>
+                <button onclick="inserir('6')">6</button>
+                <button onclick="inserir('-')"class="quartiary" id="quartiary">-</button>
+                </div>
+            <div id="keyboard">
+                <button onclick="inserir('1')">1</button>
+                <button onclick="inserir('2')">2</button>
+                <button onclick="inserir('3')">3</button>
+                <button onclick="inserir('+')" class="quartiary">+</button>
+                </div>
+            <div id="keyboard">
+                <button onclick="inserir('/')">/</button>
+                <button onclick="inserir('0')">0</button>
+                <button onclick="inserir(',')">,</button>
+                <button onclick="calcular()" class="quartiary">=</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
